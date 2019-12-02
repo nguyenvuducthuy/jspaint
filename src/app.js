@@ -155,7 +155,7 @@ const $toolbox = $ToolBox(tools);
 const $colorbox = $ColorBox();
 
 $canvas.on("user-resized", (e, _x, _y, width, height) => {
-	undoable(0, () => {
+	undoable(() => {
 		canvas.width = Math.max(1, width);
 		canvas.height = Math.max(1, height);
 		ctx.disable_image_smoothing();

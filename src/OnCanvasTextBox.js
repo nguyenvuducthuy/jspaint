@@ -185,7 +185,7 @@ class OnCanvasTextBox extends OnCanvasObject {
 	draw() {
 		const text = this.$editor.val();
 		if (text) {
-			undoable(0, () => {
+			undoable(() => {
 				// const font = text_tool_font;
 				// ctx.fillStyle = font.background;
 				// ctx.fillRect(this.x, this.y, this.width, this.height);

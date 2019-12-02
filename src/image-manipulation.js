@@ -371,7 +371,7 @@ function apply_image_transformation(fn){
 	if(selection){
 		selection.replace_source_canvas(new_canvas);
 	}else{
-		undoable(0, () => {
+		undoable(() => {
 			this_ones_a_frame_changer();
 			
 			ctx.copy(new_canvas);
